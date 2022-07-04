@@ -97,6 +97,9 @@ header .button{
     margin-right: 0.5rem;
     width: 1.5rem;
 }
+.header a{
+    color: var(--titles);
+}
 /*------ header menu------ */
 .header__nav{
     display:none;
