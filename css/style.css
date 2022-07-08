@@ -65,7 +65,8 @@ button{
     padding: 2rem 1rem;
 }
 input{
-    height: 4rem;
+    height: 3rem;
+    min-width: 20rem;
 }
 /* ---------------header------------------- */
 .header{
@@ -205,27 +206,39 @@ main{
 .main__contenedor-4{
     align-items: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
+.main__contenedor-4__div-contenedor{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
 .main__contenedor-4 img{
     width: 8rem;
 }
 .main__contenedor-4__ali{
     display: block;
-    max-width: 30%;
+    max-width: 420px;
     min-width: 320px;
+    margin: 0rem 1.5rem;
 }
 .main__contenedor-4__anisha{
     display: none;
-    max-width: 30%;
+    max-width: 420px;
     min-width: 330px;
+    margin: 0rem 1.5rem;
 }
 .main__contenedor-4__richard{
     display: none;
-    max-width: 30%;
-    min-width: 330px;
+    max-width: 420px;
+    min-width: 300px;
+    margin: 0rem 1.5rem;
 }
 .buttonblock{
     display: flex;
@@ -247,9 +260,9 @@ main{
     
 }
 .main__contenedor-5__h2{
-    max-width: 500px;
-    
+    max-width: 700px;
 }
+
 .main__contenedor-5 h2{
     color: var(--gris);
     min-width: 377px;
@@ -260,14 +273,22 @@ main{
 }
 /* ----------footer------------------- */
 footer{
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--background-footer);
     color: var(--gris);
+    width: 100vw;
+}
+.footer__contenedor{
+    align-self: center;
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-around;
     font-weight: 500;
-    width: 100vw;
+    width: 100%;
+/*     max-width: 1440px; */
 }
 .footer__form{
     display: flex;
@@ -316,6 +337,7 @@ footer{
 }
 .footer__form button{
     padding: 1rem 2rem;
+    margin: rem;
 }
 
 /*------------- pseudoselectores--------- */  
@@ -357,7 +379,10 @@ footer{
 
 
 /* --------media queries----------- agregar padding contenedor-2 art2 p 6rem */ 
-@media(min-width: 670px){
+@media(min-width: 770px){
+    html{
+        font-size: 77%;
+    }
     .main__contenedor-4__richard{
         display: block;
     }
@@ -372,7 +397,10 @@ footer{
 
 @media (min-width: 1000px){
     html{
-        font-size: 75%;
+        font-size: 90%;
+    }
+    .footer__contenedor{
+        flex-direction: row-reverse;
     }
     .footer__copy{
         padding-right: 2rem;
